@@ -1,0 +1,72 @@
+/* Styling me pehli priority given to in-line styling then internal and then external*/
+/**************************************** Tag Selectors **********************************************/
+body{
+    background-color: #FDEBF7;
+}
+
+hr{
+    border: none;
+    border-top: 1px dotted grey;
+    background-color: #FDEBF7;
+    height: 2px;
+    width: 5%;
+    border-width: 5px;
+    
+}
+
+img{
+    height: 175px;
+}
+
+h3{
+    color: #F10086;
+}
+
+h1{
+    color: #F10086;
+}
+
+/* Class and Id selectors can override anything */
+
+/***************** Class selectors used to give different styles to the same tags ***********************/
+
+/*Actually this is a h3 tag. There are many h3 tags but I want to style this one differently,
+hence we can use class*/
+
+.contact_details{
+    text-decoration: underline;
+}
+
+/***************** Id selectors: same as class selectors BUT! they are unique ***********************/
+
+#contact_me_form{
+    font-style: italic;
+}
+
+/* Difference between Id and class selectors: 
+1. Class selectors with same name can be used multiple times
+for multiple things, used to group elements. 
+But the name used for Id selector for one element can't be used anywhere else
+
+2. We can use more than one class for one element but we can't do the same with Id
+eg. class = "lala lulu mumu"
+
+In css file...
+.lala{ ----styling---- }
+.lulu{ ----styling---- }
+*/
+
+/*************pseudo class*****************/
+/*anything given in mdn list beginning with : is called a pseudo class
+
+eg. :hover 
+
+so its like if we do...
+
+img:hover{ color: golden;} 
+
+then now when we hover over the image, its background color will change to golden*/
+
+.stars:hover{
+    background-color: gold;
+}
